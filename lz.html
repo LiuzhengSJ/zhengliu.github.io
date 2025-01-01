@@ -1,0 +1,317 @@
+
+<!-- saved from url=(0052)https://yulegh.github.io/vue-element-test/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>基于vue+elementui</title>
+    
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./lz_files/index.css" type="text/css">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        /* 所有 */
+        #app {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 头 */
+        .header {
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 60px;
+            background-color: #24292e;
+            text-align: center;
+        }
+
+        .header div {
+            display: inline;
+        }
+
+        .title {
+        }
+
+        .author {
+            float: right;
+        }
+
+        .author-img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .author-github {
+            cursor: pointer;
+        }
+
+        /* 内容区 */
+        .container {
+            min-height: 600px;
+            width: 100%;
+            height: 100%
+        }
+
+        /* 左边内容区 */
+        .left {
+            color: #4b595f;
+            width: 200px;
+        }
+
+        .left .totalUl {
+            height: 93%;
+        }
+
+        /* 右边内容区 */
+        .right {
+            min-width: 200px;
+        }
+
+        tbody {
+            font-size: 15px;
+            color: #4b595f;
+        }
+
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1173.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1173.0">
+<div id="app"><section class="el-container container is-vertical"><header class="el-header header" style="height: 60px;"><div class="title"><span>余小乐的个人demo网站</span></div> <div class="author"><i class="el-icon-location-outline author-github">yuleGH</i> <img title="gitHub 主页" alt="@yuleGH" src="./lz_files/31040588" class="author-img author-github"></div></header> <section class="el-container"><aside class="el-aside left" style="width: 300px;"><ul role="menubar" class="totalUl el-menu"><li role="menuitem" tabindex="-1" class="el-menu-item is-active" style="padding-left: 20px;"><i class="el-icon-service"></i>关于我</li> <li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-time"></i>时间控件<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">DatePicker 日期选择器</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">年月日时分
+                            </li><li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">多日期选择
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-edit-outline"></i>Form<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">Input</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">小写转大写
+                            </li></ul></li><li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">validateRules</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">动态修改校验规则
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-tickets"></i>Table<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">自定义列模板</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">全部都是自定义列
+                            </li><li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">自定义表头
+                            </li><li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">将列封装为组件
+                            </li><li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">动态渲染整个表格
+                            </li></ul></li><li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">多选表格</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">反正官网上没有这个demo
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-message"></i>Dialog<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">Notification 通知</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">使用vNode
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-more"></i>Tabs 标签页<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">Tab</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">动态增减，切换时提示用户是否切换
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-news"></i>组件<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">数据绑定</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">双向绑定
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-news"></i>上传文件<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">上传文件</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">上传文件-组件
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i class="el-icon-bell"></i>播放器提示<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">声音提示</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">声音提示
+                            </li></ul></li></ul></li><li role="menuitem" aria-haspopup="true" class="el-submenu"><div class="el-submenu__title" style="padding-left: 20px;"><i></i>其他<i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div><ul role="menu" class="el-menu el-menu--inline" style="display: none;"> <li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">跳转页面</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">在当页来回跳转
+                            </li></ul></li><li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">滚动条</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">固定在可视区域
+                            </li></ul></li><li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">复制</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">复制内容到粘贴板
+                            </li></ul></li><li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">工具</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">js Date 工具
+                            </li></ul></li><li class="el-menu-item-group"><div class="el-menu-item-group__title" style="padding-left: 40px;">js 数组</div><ul> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left: 40px;">js 数组删除
+                            </li></ul></li></ul></li></ul></aside> <main class="el-main right"><iframe src="./lz_files/aboutme.html" style="width: 100%; height: 100%; border: 0px;"></iframe></main></section></section></div>
+<!-- 引入组件库 -->
+<script type="text/javascript" src="./lz_files/vue.js.download"></script>
+<script type="text/javascript" src="./lz_files/index.js.download"></script>
+
+<script type="text/javascript">
+    new Vue({
+        el: "#app",
+        data: {
+            activeIndex: "1",
+            aboutMeUrl: "aboutme.html",
+            iframeUrl: "aboutme.html",
+
+            menus: [
+                {
+                    name: "时间控件",
+                    id: "date",
+                    iconClass: "el-icon-time",
+                    children: [
+                        {
+                            name: "DatePicker 日期选择器",
+                            id: "DatePicker",
+                            children: [
+                                {name: "年月日时分", id: "DatePicker-demo1", url: "date/demoElDatePicker.html"},
+                                {name: "多日期选择", id: "DatePicker-mutidemo", url: "date/demoMultipleDate.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "Form",
+                    id: "form",
+                    iconClass: "el-icon-edit-outline",
+                    children: [
+                        {
+                            name: "Input",
+                            id: "input",
+                            children: [
+                                {name: "小写转大写", id: "input-demo1", url: "form/demoUpper.html"}
+                            ]
+                        },
+                        {
+                            name: "validateRules",
+                            id: "validateRules",
+                            children: [
+                                {name: "动态修改校验规则", id: "validateRules-demo", url: "form/validateRules.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "Table",
+                    id: "Table",
+                    iconClass: "el-icon-tickets",
+                    children: [
+                        {
+                            name: "自定义列模板",
+                            id: "ZDYLMB",
+                            children: [
+                                {name: "全部都是自定义列", id: "zdylmb-demo1", url: "table/defineTemplateSelf.html"},
+                                {name: "自定义表头", id: "custom-table-header", url: "table/customTableHeader.html"},
+                                {name: "将列封装为组件", id: "component-demo1", url: "table/componentTable.html"},
+                                {name: "动态渲染整个表格", id: "dynamic-table", url: "table/dynamicTable.html"}
+                            ]
+                        },
+                        {
+                            name: "多选表格",
+                            id: "DXBG",
+                            children: [
+                                {name: "反正官网上没有这个demo", id: "DXBG-demo1", url: "table/checkbox1.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "Dialog",
+                    id: "Dialog",
+                    iconClass: "el-icon-message",
+                    children: [
+                        {
+                            name: "Notification 通知",
+                            id: "notification",
+                            children: [
+                                {name: "使用vNode", id: "noti-demo1", url: "dialog/notification/notification.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "Tabs 标签页",
+                    id: "Tab",
+                    iconClass: "el-icon-more",
+                    children: [
+                        {
+                            name: "Tab",
+                            id: "Tab1",
+                            children: [
+                                {name: "动态增减，切换时提示用户是否切换", id: "tab-demo1", url: "tab/tabDemo.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "组件",
+                    id: "component",
+                    iconClass: "el-icon-news",
+                    children: [
+                        {
+                            name: "数据绑定",
+                            id: "databind",
+                            children: [
+                                {name: "双向绑定", id: "databind-demo1", url: "component/demoDataBindTwoWay.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "上传文件",
+                    id: "upload",
+                    iconClass: "el-icon-news",
+                    children: [
+                        {
+                            name: "上传文件",
+                            id: "uploadFile",
+                            children: [
+                                {name: "上传文件-组件", id: "uploadForComponent", url: "upload/uploadForComponent.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "播放器提示",
+                    id: "audio",
+                    iconClass: "el-icon-bell",
+                    children: [
+                        {
+                            name: "声音提示",
+                            id: "tip_mp3",
+                            children: [
+                                {name: "声音提示", id: "tip-mp3-demo1", url: "audio/audioMsgTip.html"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "其他",
+                    id: "other",
+                    children: [
+                        {
+                            name: "跳转页面",
+                            id: "other-skip-page",
+                            children: [
+                                {name: "在当页来回跳转", id: "other-skip-cur", url: "other/skipPage.html"}
+                            ]
+                        },
+                        {
+                            name: "滚动条",
+                            id: "other-scroll",
+                            children: [
+                                {name: "固定在可视区域", id: "other-scroll-demo1", url: "other/demoScroll.html"}
+                            ]
+                        },
+                        {
+                            name: "复制",
+                            id: "other-copy",
+                            children: [
+                                {name: "复制内容到粘贴板", id: "other-copy-demo1", url: "other/copyValue.html"}
+                            ]
+                        },
+                        {
+                            name: "工具",
+                            id: "other-tool",
+                            children: [
+                                {name: "js Date 工具", id: "other-date-tool", url: "other/dateTool.html"}
+                            ]
+                        },
+                        {
+                            name: "js 数组",
+                            id: "array-demo",
+                            children: [
+                                {name: "js 数组删除", id: "array-delete", url: "other/arrayDeleteTest.html"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        methods: {
+            open(url){
+                this.iframeUrl = url;
+            },
+            openGitHub(){
+                window.open("https://github.com/yuleGH", "_blank");
+            }
+        }
+    });
+</script>
+
+
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./lz_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
