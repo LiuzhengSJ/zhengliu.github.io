@@ -37,6 +37,15 @@
         .preserve-whitespace {
             white-space: pre; 
         }
+        table {
+            border-collapse: collapse; /* Removes gaps between cells */
+            width: 100%; /* Optional: Sets the table to span the page width */
+        }
+        td {
+            border: none; /* Hides table cell borders */
+            padding: 10px; /* Adds space inside the cells */
+            text-align: center; /* Aligns text to the center by default */
+        }
     </style>
 </head>
 <body>
@@ -50,6 +59,23 @@
         <h2>About</h2>
         <p>Zheng Liu is a Research Associate in robotics at the University of Manchester.</p>
 
+
+    <table>
+        <!-- First Row -->
+        <tr>
+            <td style="text-align: left;">Row 1, Column 1</td>
+            <td style="text-align: center;">Row 1, Column 2</td>
+            <td style="text-align: right;">Row 1, Column 3</td>
+        </tr>
+        <!-- Second Row -->
+        <tr>
+            <td style="text-align: left;">Row 2, Column 1</td>
+            <td style="text-align: center;">Row 2, Column 2</td>
+            <td style="text-align: right;">Row 2, Column 3</td>
+        </tr>
+    </table>
+
+        
         <h2>Education Background</h2>
         <ul class="custom-bullets">
           <li>2020~2024    Shanghai Jiao Tong University,    PhD</li>
